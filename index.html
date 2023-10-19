@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>بیجیکو  BIGIKO</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<section>
+  <fieldset class="captchaField">
+    <span id="SuccessMessage" class="success">Done Check Robot</span>
+    <input type="text" id="UserCaptchaCode" class="CaptchaTxtField" placeholder='Enter Recapchta From Photo'>
+    <span id="WrongCaptchaError" class="error"></span>
+    <div class='CaptchaWrap'>
+      <div id="CaptchaImageCode" class="CaptchaTxtField">
+        <canvas id="CapCode" class="capcode" width="100" height="50"></canvas>
+      </div> 
+      <input type="button" class="ReloadBtn" onclick='CreateCaptcha();'>
+    </div>
+    <input type="button" class="btnSubmit" onclick="CheckCaptcha(); Submit();" value="تأكيد">
+  </fieldset>
+</section>
+          
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
